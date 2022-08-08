@@ -26,6 +26,6 @@ void main(){
         if(freq[i]!=0)
         printf("%d comes %d times\n",a[i],freq[i]);
     }
-    cout<<"unknow"
+    
     
 }
