@@ -1,1 +1,1 @@
-sum
+fact
