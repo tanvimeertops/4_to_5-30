@@ -20,8 +20,8 @@ object oriented concepts
 6.abstraction
 
 Access Specifier it gives visibility and accessibility
-1.private
-2.public
+1.private only visible inside the class.
+2.public visible everywhere.
 3.protected.
 */
 /*function overloading same name but different parameter*/
