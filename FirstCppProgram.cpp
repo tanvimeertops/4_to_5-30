@@ -41,7 +41,7 @@ class FisrtCpp
         //cout<<"sum:"<<a+b;
         return a+b;
     }
-
+ 
 };
 int main(){
     FisrtCpp obj;

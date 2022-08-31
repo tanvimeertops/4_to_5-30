@@ -11,7 +11,7 @@ branch
 struct Student
 {
     int roll_no;
-    char name[100];
+    char name[500];
     int reg_no;
       char  branch[100];
 }s[n];
@@ -19,10 +19,11 @@ struct Student
 void main(){
 for (int i = 0; i < n; i++)
 {
-    printf("enter roll no:");
-    scanf("%d",&s[i].roll_no);
-    printf("\nenter name:");
+  printf("\nenter name:");
     scanf("%s",&s[i].name);
+    printf("\nenter roll no:");
+    scanf("%d",&s[i].roll_no);
+    
 }
 printf("\n-----Details of student----");
 for (int i = 0; i < n; i++)
