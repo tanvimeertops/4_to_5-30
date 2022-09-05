@@ -4,6 +4,7 @@ in c++ object are destroyed manually.
 objects are stored in stack.(stack work in LIFO)
 So the object which is created first are destroyed last.
 
+-->copy constructor cannot be overloaded
 */
 /*copy constructor and destructor
 */
