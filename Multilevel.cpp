@@ -26,15 +26,20 @@ void sub(){
 void getTime(){
     time_t now =time(0);
     //convert time to string
-    string date= 
+    
+    string dt=ctime(&now);
+    
+    cout<<dt;
+    
 
 }
 };
 int main(){
     C c;
-    B b;
-   b.setValue(10,20);
-    cout<<"sum:"<<b.sum()<<endl;
-     c.setValue(10,2);
-    c.sub();
+//     B b;
+//    b.setValue(10,20);
+//     cout<<"sum:"<<b.sum()<<endl;
+//      c.setValue(10,2);
+//     c.sub();
+c.getTime();
 }
