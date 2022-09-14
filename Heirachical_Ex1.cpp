@@ -13,16 +13,15 @@ in Physics,Chemistry and Mathematics and the average marks of the class.
    #include<iostream>
    using namespace std;
    class Marks{
-    protected:
+    public:
     int roll_number,num;
     string name;
-    int marks[5];
+    int *marks;
+    
     public:
-    void getNumOfStu(){
-        cout<<"enter number of student:";
-        cin>>num;
-    }
+    
     void setMarks(){
+        marks=new int[num];
         for (int i = 0; i <num; i++)
         {
            cout<<"enter marks";
@@ -45,10 +44,28 @@ in Physics,Chemistry and Mathematics and the average marks of the class.
         
     }
    };
+   class Physics:public Marks{
+    public:
+   };
+   class Chemistry:public Marks{
+    public:
+   };
+   class Maths:public Marks{
+    public:
+   };
    int main(){
-    Marks m;
-     m.getNumOfStu();
-    // m.setMarks();
-    // m.getMarks();
-    m.genRoll_no();
+    int num;
+    
+        cout<<"enter number of student:";
+        cin>>num;
+    
+   Physics *obj_physics=new Physics[num];
+   Chemistry *obj_chemistry=new Chemistry[num];
+   Maths *obj_maths=new Maths[num];
+   for (int i = 0; i < num; i++)
+   {
+    obj_physics[i].roll_number=obj_chemistry[i].roll_number=obj_maths[i].roll_number=i+1;
+      
+   }
+   
    }
