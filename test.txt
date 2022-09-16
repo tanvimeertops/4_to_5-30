@@ -1,0 +1,3 @@
+use db2;
+create table exam1(roll_no int,s_code varchar(255),marks int,p_code varchar(255), foreign key(roll_no) references student(roll_no));
+insert into exam1(roll_no,s_code,marks,p_code)value(6,'cs11',50,'cs');
