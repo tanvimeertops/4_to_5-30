@@ -14,14 +14,14 @@ step 5: close file.
 using namespace std;
 int main(){
     string data;
-    cout<<"enet data:";
-    getline(cin,data);
-    cout<<data;
+    // cout<<"enet data:";
+    // getline(cin,data);
+    // cout<<data;
     ofstream myfile;
     //create and open the file.
-    myfile.open("krishha.txt");
+    myfile.open("krishha.txt",ios::app);
     //write data into file
-    myfile<<data;
+    myfile<<endl<<"this is for test\nthis is for test\nthis is for test\nthis is for test"<<endl;
     cout<<endl<<"data written successfully";
     myfile.close();
 
@@ -30,10 +30,15 @@ int main(){
     //object to read from file
     ifstream readData;
     //open the file.
-    readData.open("xyz.txt");
+    readData.open("krishha.txt");
     //read data from file
-    getline(readData,data1);
-    cout<<"data:"<<data1;
+
+   while (getline(readData,data1))
+   {
+    cout<<"data:"<<data1<<endl;
+   }
+    
+    
     cout<<endl<<"data read successful";
     readData.close();
 
