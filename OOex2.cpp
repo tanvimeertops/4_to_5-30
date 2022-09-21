@@ -16,7 +16,7 @@ void dusplay(){
 
 void operator+(str strr){
 strcat(str_val,strr.str_val);
-cout<<endl<<str_val;
+cout<<str_val;
 }
 };
 int main(){
